@@ -1,3 +1,6 @@
+REM Deleting already existing class build files
+rmdir /S build
+
 REM creating new folder for class files
 md build
 

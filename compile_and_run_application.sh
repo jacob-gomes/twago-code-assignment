@@ -1,3 +1,6 @@
+## Deleting already existing class build files
+rm -r build
+
 ## creating new folder for class files
 mkdir build
 

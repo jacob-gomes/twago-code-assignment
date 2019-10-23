@@ -2,15 +2,15 @@
 
 ## Prerequisites:
 
-### Ensure jdk 1.8 is set in your class path
-### Clone the project to your local machine 
+#### Ensure jdk 1.8 is set in your class path
+#### Clone the project to your local machine 
 
 
-## Running the code on Windows:
+## Running the code on Windows(recomended):
 
-### Open command prompt navigate to twago-code-assignment
-### Execute compile_and_run_application.bat
+#### Open command prompt navigate to twago-code-assignment
+#### Execute compile_and_run_application.bat
 
-## Running the code on linux
-### Open command prompt navigate to twago-code-assignment
-### Execute compile_and_run_application.sh
+## Running the code on linux:
+#### Open command prompt navigate to twago-code-assignment
+#### Execute compile_and_run_application.sh
