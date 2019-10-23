@@ -12,16 +12,25 @@ import com.twago.assignment.findmax.model.InputModel;
  * @author Jacob
  *
  */
-public class ComplexityProductOfYAndMaxRange implements SolutionForFindingMax{
+public class ComplexityProductOfYAndMaxRange{
 
-	@Override
-	public int computeMaxValue(InputModel inputModel) {
-		List<Integer> listOfXLength = new ArrayList<>(Collections.nCopies(inputModel.getX(), 0));
+	private ComplexityProductOfYAndMaxRange() {}
+	
+	public static int computeMaxValue(InputModel inputModel) {
+		
 		int maxValue;
+		int lowerLimit;
+		int upperLimit;
+		int valueToBeAdded;
+		List<Integer> listOfXLength = new ArrayList<>(Collections.nCopies(inputModel.getX(), 0));
 		
 		for(InputModel.IJKCombination ijkCombination : inputModel.getIjkCombinationList()) {
-			for(int index = ijkCombination.i - 1; index < ijkCombination.j; index++) {
-				listOfXLength.set(index, listOfXLength.get(index) + ijkCombination.k);
+			lowerLimit = ijkCombination.i;
+			upperLimit = ijkCombination.j;
+			valueToBeAdded = ijkCombination.k;
+			
+			for(int index = lowerLimit - 1; index < upperLimit; index++) {
+				listOfXLength.set(index, listOfXLength.get(index) + valueToBeAdded);
 			}
 			//listOfXLength.forEach(System.out::print);
 			//System.out.println("");

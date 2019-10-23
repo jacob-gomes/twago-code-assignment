@@ -16,20 +16,21 @@ public class SolutionFactory {
 	private SolutionFactory() {}
 	
 	public static SolutionForFindingMax getSolutionForFindingMaxImplDependingOnComplexity(SolutionType solutionType) {
-		SolutionForFindingMax solutionForFindMax = null;
 		
 		switch(solutionType) {
 			case LOWEST_COMPLEXITY:
-				solutionForFindMax = new ComplexityProductOfYAndLogY();
-				break;
+				// ComplexityProductOfYAndLogY is considered lowest complexity because X can be 10^7 and Y can b 10^5
+				// O(Y*logY) = 2.3* 10^5
+				// wiz less then O(X + Y) = 10^7
+				return ComplexityProductOfYAndLogY::computeMaxValue;
+				
 			case MEDIUM_COMPLEXITY:
-				solutionForFindMax = new ComplexitySumOfXAndY();
-				break;
+				return ComplexitySumOfXAndY::computeMaxValue;
+				
 			case HIGHEST_COMPLEXITY:
-				solutionForFindMax = new ComplexityProductOfYAndMaxRange();
-				break;
+				return ComplexityProductOfYAndMaxRange::computeMaxValue;
 		}
-		
-		return solutionForFindMax;
+				
+		return null;
 	}
 }

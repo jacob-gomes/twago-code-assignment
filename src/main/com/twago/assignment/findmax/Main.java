@@ -17,7 +17,7 @@ import com.twago.assignment.findmax.util.ComputeKeyboardInputUtil;
  */
 public class Main {
 	
-	static SolutionType solutionChoice = SolutionType.HIGHEST_COMPLEXITY; 
+	static SolutionType solutionChoice = SolutionType.LOWEST_COMPLEXITY; 
 
 	/**
 	 * @param args
