@@ -36,6 +36,6 @@ public class Main {
 		
 		maxValue = solutionForFindingMax.computeMaxValue(inputModel);
 		
-		System.out.println(maxValue);
+		System.out.println("Output: "+ maxValue);
 	}
 }
