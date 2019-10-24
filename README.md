@@ -31,7 +31,7 @@ Depending on their O(n) I categorized it into HIGHEST_COMPLEXITY, MEDIUM_COMPLEX
 		(Implentation class - SolutionComplexitySumOfXAndY)
 		The medium complexity solution has a complexity of O(n) = O(X + Y)
 	
-	3. LOWEST_COMPLEXITY:
+	3. LOWEST_COMPLEXITY (Most Efficient):
 		(Implentation class - SolutionComplexityProductOfYAndLogY)
 		The lowest complexity solution has a complexity of O(n) = O(Y * logY)
 
@@ -40,7 +40,7 @@ That is true only when the range of X and Y are almost same.
 
 But in the task given the range of X is [1 , 10 ^7] and that of Y is  [ 1 , 2 * 10^5]
 
-So in worst case scenario X + Y will yeild a number that is of the order 10^7
-Whereas in the worst case scenario  Y * Log(Y) will yield a number of the order 10^5 (2.3* 10^5 to be precise)
+So in worst case scenario X + Y will yeild a number that is of the order 10^7.
+Whereas in the worst case scenario  Y * Log(Y) will yield a number of the order 10^5 (2.3* 10^5 to be precise).
 
 Thus the later is most efficient in the given scenario.
