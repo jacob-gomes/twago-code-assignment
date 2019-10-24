@@ -9,7 +9,7 @@ import com.twago.assignment.findmax.model.InputModel;
 
 public class ComputeKeyboardInputUtil {
 	
-	public void populateInputModelUsingKeyboardInputs(InputModel inputModel) throws IOException {
+	public static void populateInputModelUsingKeyboardInputs(InputModel inputModel) throws IOException {
 		InputStreamReader inputStreamReader = new InputStreamReader(System.in);  
 		BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 		InputModel.IJKCombination ijkCombination;

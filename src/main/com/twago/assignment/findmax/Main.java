@@ -10,6 +10,7 @@ import com.twago.assignment.findmax.model.InputModel;
 import com.twago.assignment.findmax.solutions.SolutionForFindingMax;
 import com.twago.assignment.findmax.solutions.factory.SolutionFactory;
 import com.twago.assignment.findmax.util.ComputeKeyboardInputUtil;
+import com.twago.assignment.findmax.validation.InputModelValidation;
 
 /**
  * @author Jacob
@@ -25,14 +26,15 @@ public class Main {
 	 */
 	public static void main(String[] args) throws IOException {
 		
-		SolutionForFindingMax solutionForFindingMax;
+		SolutionForFindingMax solutionForFindingMax;		
 		int maxValue;
 		InputModel inputModel = new InputModel();
-		ComputeKeyboardInputUtil computeKeyboardInputUtil = new ComputeKeyboardInputUtil();
 		
-		computeKeyboardInputUtil.populateInputModelUsingKeyboardInputs(inputModel);
+		ComputeKeyboardInputUtil.populateInputModelUsingKeyboardInputs(inputModel);
 		
-		solutionForFindingMax = SolutionFactory.getSolutionForFindingMaxImplDependingOnComplexity(solutionChoice);
+		InputModelValidation.validate(inputModel);
+		
+		solutionForFindingMax = SolutionFactory.getSolutionForFindingMaxImplDependingOnComplexity(solutionChoice);	
 		
 		maxValue = solutionForFindingMax.computeMaxValue(inputModel);
 		

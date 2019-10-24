@@ -23,13 +23,13 @@ public class ComplexityProductOfYAndLogY {
 		int upperLimit;
 		int valueToBeAdded;
 		Map<Integer,Integer> prefixTreeMap = new TreeMap<>();
-		
+					
 		for(InputModel.IJKCombination ijkCombination : inputModel.getIjkCombinationList()) {
 			lowerLimit = ijkCombination.i;
 			upperLimit = ijkCombination.j;
 			valueToBeAdded = ijkCombination.k;
 			
-			prefixTreeMap.put(lowerLimit, getNotNullValue(prefixTreeMap.get(lowerLimit)) + valueToBeAdded);
+			prefixTreeMap.put(lowerLimit - 1, getNotNullValue(prefixTreeMap.get(lowerLimit - 1)) + valueToBeAdded);
 			prefixTreeMap.put(upperLimit, getNotNullValue(prefixTreeMap.get(upperLimit)) - valueToBeAdded);
 		}
 		

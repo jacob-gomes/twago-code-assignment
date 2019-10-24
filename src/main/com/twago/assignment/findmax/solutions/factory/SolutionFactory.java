@@ -12,8 +12,6 @@ import com.twago.assignment.findmax.solutions.SolutionForFindingMax;
  *
  */
 public class SolutionFactory {
-
-	private SolutionFactory() {}
 	
 	public static SolutionForFindingMax getSolutionForFindingMaxImplDependingOnComplexity(SolutionType solutionType) {
 		

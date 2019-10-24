@@ -9,8 +9,9 @@
 ## Running the code on Windows(recomended):
 
 #### Open command prompt navigate to twago-code-assignment
-#### Execute compile_and_run_application.bat
+#### > compile_and_run_application.bat
 
 ## Running the code on linux:
 #### Open command prompt navigate to twago-code-assignment
-#### Execute compile_and_run_application.sh
+#### $ chmod +x compile_and_run_application.sh
+#### $ compile_and_run_application.sh

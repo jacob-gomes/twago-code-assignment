@@ -23,7 +23,7 @@ public class ComplexityProductOfYAndMaxRange{
 		int upperLimit;
 		int valueToBeAdded;
 		List<Integer> listOfXLength = new ArrayList<>(Collections.nCopies(inputModel.getX(), 0));
-		
+	
 		for(InputModel.IJKCombination ijkCombination : inputModel.getIjkCombinationList()) {
 			lowerLimit = ijkCombination.i;
 			upperLimit = ijkCombination.j;
