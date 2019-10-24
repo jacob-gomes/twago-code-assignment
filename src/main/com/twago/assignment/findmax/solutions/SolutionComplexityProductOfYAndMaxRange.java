@@ -12,9 +12,9 @@ import com.twago.assignment.findmax.model.InputModel;
  * @author Jacob
  *
  */
-public class ComplexityProductOfYAndMaxRange{
+public class SolutionComplexityProductOfYAndMaxRange{
 
-	private ComplexityProductOfYAndMaxRange() {}
+	private SolutionComplexityProductOfYAndMaxRange() {}
 	
 	public static int computeMaxValue(InputModel inputModel) {
 		

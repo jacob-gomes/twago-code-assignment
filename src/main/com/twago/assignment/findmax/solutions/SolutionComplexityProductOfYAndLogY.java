@@ -11,9 +11,9 @@ import com.twago.assignment.findmax.model.InputModel;
  * @author Jacob
  *
  */
-public class ComplexityProductOfYAndLogY {
+public class SolutionComplexityProductOfYAndLogY {
 	
-	private ComplexityProductOfYAndLogY() {}
+	private SolutionComplexityProductOfYAndLogY() {}
 	
 	public static int computeMaxValue(InputModel inputModel) {
 		

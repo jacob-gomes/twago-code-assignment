@@ -13,9 +13,9 @@ import com.twago.assignment.findmax.model.InputModel;
  * @author Jacob
  *
  */
-public class ComplexitySumOfXAndY{
+public class SolutionComplexitySumOfXAndY{
 
-	private ComplexitySumOfXAndY() {}
+	private SolutionComplexitySumOfXAndY() {}
 	
 	public static int computeMaxValue(InputModel inputModel) {
 		

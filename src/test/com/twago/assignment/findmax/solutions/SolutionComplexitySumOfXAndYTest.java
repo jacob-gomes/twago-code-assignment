@@ -14,7 +14,7 @@ import com.twago.assignment.findmax.model.InputModel;
  *
  */
 
-public class ComplexitySumOfXAndYTest {
+public class SolutionComplexitySumOfXAndYTest {
 	
 	@Test
 	public void computeMaxValueTestWithSameValuesOfK() {
@@ -44,7 +44,7 @@ public class ComplexitySumOfXAndYTest {
 		testIJKCombination.k = 100;
 		testInputModel.getIjkCombinationList().add(testIJKCombination);
 		
-		maxValue = ComplexitySumOfXAndY.computeMaxValue(testInputModel);
+		maxValue = SolutionComplexitySumOfXAndY.computeMaxValue(testInputModel);
 		
 		assertEquals(200, maxValue);
 	}
@@ -77,7 +77,7 @@ public class ComplexitySumOfXAndYTest {
 		testIJKCombination.k = 300;
 		testInputModel.getIjkCombinationList().add(testIJKCombination);
 		
-		maxValue = ComplexitySumOfXAndY.computeMaxValue(testInputModel);
+		maxValue = SolutionComplexitySumOfXAndY.computeMaxValue(testInputModel);
 		
 		assertEquals(500, maxValue);
 	}
@@ -110,7 +110,7 @@ public class ComplexitySumOfXAndYTest {
 		testIJKCombination.k = 300;
 		testInputModel.getIjkCombinationList().add(testIJKCombination);
 		
-		maxValue = ComplexitySumOfXAndY.computeMaxValue(testInputModel);
+		maxValue = SolutionComplexitySumOfXAndY.computeMaxValue(testInputModel);
 		
 		assertEquals(600, maxValue);
 	}
